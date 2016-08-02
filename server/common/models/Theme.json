@@ -1,0 +1,208 @@
+{
+  "name": "Theme",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "pecunio",
+      "table": "Theme"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "domainId": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "domain_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "templateName": {
+      "type": "String",
+      "required": true,
+      "length": 90,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "template_name",
+        "dataType": "varchar",
+        "dataLength": 90,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "primaryColor": {
+      "type": "String",
+      "required": true,
+      "length": 21,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "primary_color",
+        "dataType": "varchar",
+        "dataLength": 21,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "secondaryColor": {
+      "type": "String",
+      "required": true,
+      "length": 21,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "secondary_color",
+        "dataType": "varchar",
+        "dataLength": 21,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "tertiaryColor": {
+      "type": "String",
+      "required": true,
+      "length": 21,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "tertiary_color",
+        "dataType": "varchar",
+        "dataLength": 21,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "headlineColor": {
+      "type": "String",
+      "required": true,
+      "length": 21,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "headline_color",
+        "dataType": "varchar",
+        "dataLength": 21,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "headlineFont": {
+      "type": "String",
+      "required": true,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "headline_font",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "textColor": {
+      "type": "String",
+      "required": true,
+      "length": 21,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "text_color",
+        "dataType": "varchar",
+        "dataLength": 21,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "textFont": {
+      "type": "String",
+      "required": true,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "text_font",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "crdate": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 19,
+      "scale": 0,
+      "mysql": {
+        "columnName": "crdate",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": 19,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "updated": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 19,
+      "scale": 0,
+      "mysql": {
+        "columnName": "updated",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": 19,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "status": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "status",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    }
+  }
+}

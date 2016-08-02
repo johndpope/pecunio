@@ -1,0 +1,58 @@
+{
+  "name": "UserHash",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "pecunio",
+      "table": "UserHash"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "userId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "userId",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "hash": {
+      "type": "String",
+      "required": false,
+      "length": 600,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "hash",
+        "dataType": "varchar",
+        "dataLength": 600,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  }
+}

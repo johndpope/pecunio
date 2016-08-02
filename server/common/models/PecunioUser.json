@@ -1,0 +1,299 @@
+{
+  "name": "PecunioUser",
+  "base": "User",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "pecunio",
+      "table": "PecunioUser"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "id": 1,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "realm": {
+      "type": "String",
+      "required": false,
+      "length": 3072,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "realm",
+        "dataType": "varchar",
+        "dataLength": 3072,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "username": {
+      "type": "String",
+      "required": false,
+      "length": 3072,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "username",
+        "dataType": "varchar",
+        "dataLength": 3072,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "password": {
+      "type": "String",
+      "required": false,
+      "length": 3072,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "password",
+        "dataType": "varchar",
+        "dataLength": 3072,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "entityType": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "entityType",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "credentials": {
+      "type": "String",
+      "required": false,
+      "length": 65535,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "credentials",
+        "dataType": "text",
+        "dataLength": 65535,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "challenges": {
+      "type": "String",
+      "required": false,
+      "length": 65535,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "challenges",
+        "dataType": "text",
+        "dataLength": 65535,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "email": {
+      "type": "String",
+      "required": false,
+      "length": 3072,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "email",
+        "dataType": "varchar",
+        "dataLength": 3072,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "emailverified": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "emailVerified",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "verificationtoken": {
+      "type": "String",
+      "required": false,
+      "length": 3072,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "verificationToken",
+        "dataType": "varchar",
+        "dataLength": 3072,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "status": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "status",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "created": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 19,
+      "scale": 0,
+      "mysql": {
+        "columnName": "created",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": 19,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "lastUpdated": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 19,
+      "scale": 0,
+      "mysql": {
+        "columnName": "lastUpdated",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": 19,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "DENY",
+     "accessType": "*"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "register"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "changePassword"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "checkEmailExists"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "uploadFile"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "getPersonalData"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "sendCreatePasswordLink"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "getImage"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "getAccount"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "createAccessToken"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "checkFaceBookId"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "checkGoogleAppId"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "getGroups"
+   },
+   {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "permission": "ALLOW",
+     "property": "getDomains"
+   }
+  ],
+  "methods": []
+}
+

@@ -1,0 +1,11 @@
+{
+  "name": "AdvModel",
+  "plural": "AdvModel",
+  "base": "",
+  "options": {},
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

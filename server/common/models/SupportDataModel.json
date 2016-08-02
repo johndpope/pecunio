@@ -1,0 +1,11 @@
+{
+  "name": "SupportDataModel",
+  "plural": "SupportDataModel",
+  "base": "",
+  "options": {},
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

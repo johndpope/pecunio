@@ -1,0 +1,10 @@
+{
+  "name": "AdBuilderDataModel",
+  "plural": "AdBuilderDataModel",
+  "base": "",
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
